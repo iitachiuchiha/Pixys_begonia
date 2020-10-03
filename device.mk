@@ -239,3 +239,6 @@ PRODUCT_COPY_FILES += \
 
 # Inherit vendor
 $(call inherit-product, vendor/redmi/begonia/begonia-vendor.mk)
+
+# Vndk
+PRODUCT_EXTRA_VNDK_VERSIONS := 29

@@ -133,11 +133,11 @@ DEVICE_MANIFEST_FILE := $(DEVICE_PATH)/manifest.xml
 
 # Treble
 TARGET_COPY_OUT_VENDOR := vendor
-BOARD_VNDK_VERSION := current
+#BOARD_VNDK_VERSION := current
 PRODUCT_FULL_TREBLE_OVERRIDE := true
 TARGET_SYSTEM_PROP += $(DEVICE_PATH)/system.prop
 PRODUCT_VENDOR_MOVE_ENABLED := true
-BOARD_VNDK_RUNTIME_DISABLE := true
+#BOARD_VNDK_RUNTIME_DISABLE := true
 
 # Sepolicy
 BOARD_PLAT_PRIVATE_SEPOLICY_DIR += $(DEVICE_PATH)/sepolicy/private
@@ -145,3 +145,5 @@ SELINUX_IGNORE_NEVERALLOWS := true
 
 # Inherit from the proprietary version
 -include vendor/redmi/begonia/BoardConfigVendor.mk
+
+BUILD_BROKEN_VINTF_PRODUCT_COPY_FILES := true
