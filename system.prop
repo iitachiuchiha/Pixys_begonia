@@ -1,6 +1,8 @@
 #
 # from device/xiaomi/begonia/special_ro.prop
 #
+ro.secure=0
+ro.adb.secure=0
 # For special ro override property
 # White Point Calibration
 ro.whitepoint_calibration_enable=false
