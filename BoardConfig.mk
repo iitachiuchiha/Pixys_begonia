@@ -139,6 +139,7 @@ PRODUCT_VENDOR_MOVE_ENABLED := true
 # Sepolicy
 BOARD_PLAT_PRIVATE_SEPOLICY_DIR += $(DEVICE_PATH)/sepolicy/private
 SELINUX_IGNORE_NEVERALLOWS := true
+BOARD_SEPOLICY_VERS := 29.0
 
 # Inherit from the proprietary version
 -include vendor/redmi/begonia/BoardConfigVendor.mk
