@@ -60,5 +60,8 @@ PRODUCT_PACKAGES += \
 PRODUCT_PACKAGES += \
     libtinyxml
 
+# VNDK
+PRODUCT_EXTRA_VNDK_VERSIONS := 29
+
 # Inherit vendor
 $(call inherit-product, vendor/redmi/begonia/begonia-vendor.mk)
